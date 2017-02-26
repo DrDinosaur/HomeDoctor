@@ -20,8 +20,9 @@ An application that provides a medical diagnosis and recommendation on Google As
 
 ## OTHER SOURCES OF DOCUMENTATION
 
-* https://developer.infermedica.com/docs/introduction
+* https://developers.google.com/actions/
 * https://docs.api.ai/
+* https://developer.infermedica.com/docs/introduction
 
 ## Contributor Guide
 [CONTRIBUTING.md](CONTRIBUTING.md)
