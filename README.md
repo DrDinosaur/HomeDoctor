@@ -18,9 +18,10 @@ An application that provides a medical diagnosis and recommendation on Google As
     * Run this Python program on a server
     * Talk to the application with your Google Home (use same account as with api.ai)
 
-## [INTERFACES] _(if applicable)_ 
-
 ## OTHER SOURCES OF DOCUMENTATION
+
+* https://developer.infermedica.com/docs/introduction
+* https://docs.api.ai/
 
 ## Contributor Guide
 [CONTRIBUTING.md](CONTRIBUTING.md)
