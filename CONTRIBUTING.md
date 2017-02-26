@@ -4,7 +4,6 @@ Welcome to HomeDoctor! Thank you for looking at our application and trying to co
 
 ## Contributing a patch
 
-
 ### API.AI patch:
 1. Start with the latest API.AI zip file
 2. Make your changes
@@ -19,6 +18,13 @@ Welcome to HomeDoctor! Thank you for looking at our application and trying to co
 3. Ensure that your code is tested.
 4. A main contributor will respond to your issue promptly.
 5. The change will be added once deemed acceptable.
+
+## Code layout
+
+## Future features
+* Firebase reporting
+* Recommend nearby doctors and specialists
+* Take into account risk factors
 
 ## Testing
 Please test using a real Google Home or the web simulator.
