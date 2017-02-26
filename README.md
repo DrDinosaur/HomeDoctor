@@ -17,6 +17,15 @@ An application that provides a medical diagnosis and recommendation on Google As
     * Configure api.ai using the web interface
     * Run this Python program on a server
     * Talk to the application with your Google Home (use same account as with api.ai)
+# BUILD/INSTALLATION INSTRUCTIONS:
+1. Load the HomeDoctor.zip agent into API.AI
+2. Move the web backend files (main.py, requirements.txt) into your server of choice
+3. Install requirements with `pip install -r requirements.txt`
+4. Obtain API credentials from Infermedica and Firebase. Edit `secrets.example.py` and save as `secrets.py`
+4. Run backend with `python main.py`
+5. Point the API.AI webhook endpoint to https://(your-server-ip)/webhook
+6. Setup the API.AI google assistant integration (use same account linked to your Google Home)
+7. Talk to your google home! (see usage)
 
 ## OTHER SOURCES OF DOCUMENTATION
 
