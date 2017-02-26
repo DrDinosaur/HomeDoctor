@@ -4,6 +4,14 @@ Welcome to HomeDoctor! Thank you for looking at our application and trying to co
 
 ## Contributing a patch
 
+
+### API.AI patch:
+1. Start with the latest API.AI zip file
+2. Make your changes
+3. Create a pull request with a well documented, STEP-BY-STEP list of changes you made to the API.AI training model.
+4. We will likely ask additional questions; please provide prompt feedback. Your changes will be added once deemed acceptable.
+
+### Backend webhook patch:
 1. Submit a pull request.
 2. Ensure proper style by looking at the
    [Python Style Guide]
