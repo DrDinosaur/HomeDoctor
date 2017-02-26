@@ -1,0 +1,12 @@
+# This requirements file lists all third-party dependencies for this project.
+#
+# Run 'pip install -r requirements.txt -t lib/' to install these dependencies
+# in `lib/` subdirectory.
+#
+# Note: The `lib` directory is added to `sys.path` by `appengine_config.py`.
+requests>=2.13.0
+Flask>=0.10.1
+apiai>=1.2.3
+infermedica_api>=0.0.7
+urllib3>=1.20
+pyrebase>=3.0.27
