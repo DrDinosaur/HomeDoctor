@@ -19,7 +19,7 @@ An application that provides a medical diagnosis and recommendation on Google As
 4. Run backend with `python main.py`
 5. Point the API.AI webhook endpoint to https://(your-server-ip)/webhook
 6. Setup the API.AI google assistant integration (use same account linked to your Google Home)
-7. Talk to your google home! (see usage)
+7. Talk to your Google Home! (see usage)
 
 ## OTHER SOURCES OF DOCUMENTATION
 
