@@ -1,14 +1,14 @@
 # HomeDoctor
 
 An application that provides a medical diagnosis and recommendation on Google Assistant
-  * Provides a medicial diagnosis based on your symptoms
+  * Provides a medical diagnosis based on your symptoms
   * Asks follow-up questions to provide a more accurate diagnosis
   * Gives context about the conditions(s) you may have and a recommendation on what to do about it
 
 ## USAGE
   * "Ok Google, talk to HomeDoctor" to speak with the application
-  * "I'm a 30 year old male" to indentify your age and sex
-  * "I have a runny nose and a sore throat" to indentify your symptoms
+  * "I'm a 30 year old male" to identify your age and sex
+  * "I have a runny nose and a sore throat" to identify your symptoms
   * "Yes (or no)" to answer follow up questions
   
 # BUILD/INSTALLATION INSTRUCTIONS:
