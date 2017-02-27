@@ -3,7 +3,7 @@
 An application that provides a medical diagnosis and recommendation on Google Assistant
   * Provides a medicial diagnosis based on your symptoms
   * Asks follow-up questions to provide a more accurate diagnosis
-  * Gives context about the conditios(s) you may have and a recommendation on what to do about it
+  * Gives context about the conditions(s) you may have and a recommendation on what to do about it
 
 ## USAGE
   * "Ok Google, talk to HomeDoctor" to speak with the application
