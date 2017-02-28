@@ -11,7 +11,7 @@ An application that provides a medical diagnosis and recommendation on Google As
   * "I have a runny nose and a sore throat" to identify your symptoms
   * "Yes (or no)" to answer follow up questions
   
-# BUILD/INSTALLATION INSTRUCTIONS:
+## BUILD/INSTALLATION INSTRUCTIONS:
 1. Load the HomeDoctor.zip agent into API.AI
 2. Move the web backend files (main.py, requirements.txt) into your server of choice
 3. Install requirements with `pip install -r requirements.txt`
