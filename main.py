@@ -1,13 +1,10 @@
 import urllib
 import json
 import os
-
 from flask import Flask
 from flask import request
 from flask import make_response
-
 import infermedica_api
-
 from secrets import *  # contains infermedica app id/key
 
 # from google.appengine.api import urlfetch
@@ -34,7 +31,6 @@ sessionMap = {}
 inf_api = infermedica_api.get_api()
 conditions = inf_api.conditions_list()
 
-
 @app.route('/webhook', methods=['POST'])
 def webhook():
     req = request.get_json(silent=True, force=True)
@@ -43,26 +39,27 @@ def webhook():
     print(json.dumps(req, indent=4))
 
     res = processRequest(req)
-
     res = json.dumps(res, indent=4)
+
     print("Response:")
     print(res)
-    r = make_response(res)
-    r.headers['Content-Type'] = 'application/json'
-    return r
+
+    response = make_response(res)
+    response.headers['Content-Type'] = 'application/json'
+    return response
 
 
 def processRequest(req):
     print("Processing request")
     result = req.get("result")
-    contexts = result.get("contexts")
+    # contexts = result.get("contexts")
     action = result.get("action")
 
     if action == "givesymptoms":
         return giveSymptoms(req)
     elif action == "followup":
         return followUp(req)
-    return res
+    return result
 
 
 def finished(sessionId, diagnose_res):
@@ -81,7 +78,7 @@ def finished(sessionId, diagnose_res):
             if len(out) == 0:
                 out.append(conditions[0])
 
-            msg = "Ok... here is your diagnosis... "
+            msg = "Ok, here is your diagnosis... "
             for x in range(len(out)):
                 msg += condition_message(out[x], x != 0)
             # msg = "It looks like you have a chance of being diagnosed with: " + ",".join(out)
@@ -133,8 +130,9 @@ def condition_message(condition, also):
     also = "also " if also else ""
     if rarity == "moderate":
         rarity = "moderate prevalence"
-    return "There is " + also + "a " + prob + " chance of you having " + condition.get(
-        "name") + ". This is a " + rarity + ", " + acuteness + " condition of " + severity + " severity. " + hint + ". "
+    return 'There is {} a {} chance of you having {}. This is a {}, {} condition of {} severity. {}.'.format(
+        also, prob, condition.get('name'), rarity, acuteness, severity, hint
+    )
 
 
 def followUp(req):
